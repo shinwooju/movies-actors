@@ -20,8 +20,6 @@ class ActorsView(View):
         actors   = Actor.objects.all()
         results  = []
         for actor in actors:
-            movies = actor.movie.all()
-            for movie in movies:
                 results.append(
                     {
                     "first_name"    : actor.first_name,
